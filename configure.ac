@@ -2073,13 +2073,12 @@ BRLTTY_DEFINE_DIRECTORY([SCRIPTS_DIRECTORY], [${execute_root}${scripts_directory
 BRLTTY_DEFINE_DIRECTORY([CONFIGURATION_DIRECTORY], [${sysconfdir}],
                         [Define this to be a string containing the path to the configuration directory.])
 
-BRLTTY_DEFINE_EXPANDED([BRLAPI_ETCDIR], ["${CONFIGURATION_DIRECTORY}"],
-                       [Define this to be a string containing the path to BrlAPI's data files directory.])
+BRLTTY_DEFINE_DIRECTORY([BRLAPI_ETCDIR], ["${CONFIGURATION_DIRECTORY}"],
+                        [Define this to be a string containing the path to BrlAPI's data files directory.])
 
-BRLTTY_DEFINE_EXPANDED([BRLAPI_SOCKETPATH], ["${api_socket_path}"],
-		       [Define this to be a string containing the path to BrlAPI's local sockets directory.])
+BRLTTY_DEFINE_DIRECTORY([BRLAPI_SOCKETPATH], ["${api_socket_path}"],
+		        [Define this to be a string containing the path to BrlAPI's local sockets directory.])
 
-BRLTTY_SUBST_EXPANDED([api_socket_directory], ["${api_socket_path}"])
 prefix="${original_prefix}"
 exec_prefix="${original_exec_prefix}"
 
@@ -2098,6 +2097,7 @@ AC_OUTPUT([
    config.mk
    brltty.spec
    brltty-config.sh
+   brltty.pc
    Documents/brltty.conf
    Documents/brltty.1
    Documents/BrlAPIref.doxy
