@@ -642,6 +642,8 @@ in
       ;;
 esac
 
+brltty_cv_dll_ws2_32=yes
+
 install_messages=
 BRLTTY_ARG_DISABLE(
    [i18n],
@@ -976,8 +978,8 @@ in
    cygwin*|mingw*)
       if test "${brltty_cv_dll_ws2_32}" = "yes"
       then
-         BRLTTY_HAVE_WINDOWS_FUNCTION([getaddrinfo], [ws2_32])
-         BRLTTY_HAVE_WINDOWS_FUNCTION([getnameinfo], [ws2_32])
+         #BRLTTY_HAVE_WINDOWS_FUNCTION([getaddrinfo], [ws2_32])
+         #BRLTTY_HAVE_WINDOWS_FUNCTION([getnameinfo], [ws2_32])
          AC_CHECK_FUNCS([gai_strerror])
       fi
       AC_CHECK_TYPES([PROCESS_INFORMATION_CLASS], [], [], [

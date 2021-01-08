@@ -780,7 +780,7 @@ AC_CACHE_CHECK(
       fi
    ]
 )
-if test "${brltty_cv_dll_$1}" = "yes"
+if true || test "${brltty_cv_dll_$1}" = "yes"
 then
    BRLTTY_HAVE_LIBRARY([$1])
    $2

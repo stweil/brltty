@@ -1,0 +1,3 @@
+'--host=i686-w64-mingw32' '--disable-speech-support' '--disable-polkit' '--disable-java-bindings' '--disable-ocaml-bindings' '--disable-python-bindings' '--disable-tcl-bindings' '--disable-x' '--prefix=/home/debian/src/github/brltty/brltty/bin/ndebug/i686-w64-mingw32/usr' 'CPPFLAGS=-I/usr/i686-w64-mingw32/sys-root/mingw/include' 'LIBS=-lws2_32 -lgdi32 -lwinmm' 'PKG_CONFIG_PATH=/usr/i686-w64-mingw32/sys-root/mingw/lib/pkgconfig'
+
+'--host=x86_64-w64-mingw32' '--disable-speech-support' '--disable-java-bindings' '--prefix=/home/debian/src/github/brltty/brltty/bin/ndebug/x86_64-w64-mingw32/usr' 'CPPFLAGS=-I/usr/x86_64-w64-mingw32/sys-root/mingw/include' 'LIBS=-lws2_32' 'PKG_CONFIG_PATH=/usr/x86_64-w64-mingw32/sys-root/mingw/lib/pkgconfig'
