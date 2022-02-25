@@ -760,7 +760,7 @@ int main () {
 ],
 [brltty_cv_dll_$1=yes],
 [brltty_cv_dll_$1=no])])
-if true || test "${brltty_cv_dll_$1}" = "yes" || true
+if true || test "${brltty_cv_dll_$1}" = "yes"
 then
    AC_HAVE_LIBRARY([$1])
    $2

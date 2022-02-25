@@ -636,9 +636,16 @@ AC_SUBST([CONFLIBDIR], ["${brltty_cv_prog_conflibdir}"])
 case "${host_os}"
 in
    mingw*)
-      # BRLTTY_HAVE_WINDOWS_LIBRARY([ws2_32])
-      # BRLTTY_HAVE_WINDOWS_LIBRARY([gdi32])
-      # BRLTTY_HAVE_WINDOWS_LIBRARY([winmm])
+      if false && test "${cross_compiling}" != "no"; then
+      BRLTTY_HAVE_WINDOWS_LIBRARY([ws2_32])
+      BRLTTY_HAVE_WINDOWS_LIBRARY([gdi32])
+      BRLTTY_HAVE_WINDOWS_LIBRARY([winmm])
+      else
+        AC_HAVE_LIBRARY([ws2_32])
+        AC_HAVE_LIBRARY([gdi32])
+        AC_HAVE_LIBRARY([winmm])
+        brltty_cv_dll_ws2_32=yes
+      fi
       ;;
    cygwin*)
       BRLTTY_HAVE_WINDOWS_LIBRARY([gdi32])
@@ -648,8 +655,6 @@ in
       AC_SEARCH_LIBS([inet_ntoa], [nsl])
       ;;
 esac
-
-brltty_cv_dll_ws2_32=yes
 
 install_messages=
 BRLTTY_ARG_DISABLE(
