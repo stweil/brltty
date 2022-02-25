@@ -642,8 +642,6 @@ in
       ;;
 esac
 
-brltty_cv_dll_ws2_32=yes
-
 install_messages=
 BRLTTY_ARG_DISABLE(
    [i18n],
