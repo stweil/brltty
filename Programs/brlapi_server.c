@@ -239,7 +239,7 @@ static ParamState paramState[BRLAPI_PARAM_COUNT];
 static pthread_t serverThread; /* server */
 #ifdef ENABLE_API_FUZZING
 static pthread_t fuzzerThread;                       /* fuzzer */
-static pthread_t crasherThread;                      /* crash reproducer */
+static pthread_t crasherThread;                      /* crasher reproducer */
 #endif /* ENABLE_API_FUZZING */
 static pthread_t socketThreads[SERVER_SOCKET_LIMIT]; /* socket binding threads */
 static int running; /* should threads be running? */
