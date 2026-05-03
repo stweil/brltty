@@ -1525,7 +1525,7 @@ April 1, 2013:
    HumanWare Braille Driver:
       USB autodetection is now supported.
    IrisLinux Braille Driver:
-      Removed - superceded by the Iris braille driver.
+      Removed - superseded by the Iris braille driver.
    NinePoint Braille Driver:
       Cebra devices are now supported by the new Cebra braille driver.
       This driver now supports the NinePoint device.
@@ -1750,7 +1750,7 @@ October 10, 2011:
       More and less restrictive fonts are supported.
       Hard program exits have been removed.
    eSpeak speech driver changes:
-      The full advertized speech rate range can now be used.
+      The full advertised speech rate range can now be used.
    FestivalLite speech driver changes:
       The default voice has been changed to kal (from kal16).
    AtSpi screen driver changes:
@@ -2577,7 +2577,7 @@ September 17, 2005:
       Add the driver comment string to the driver structure.
       Split the braille and speech drivers into separate subdirectories.
       Don't create the /lib/brltty/brltty-???.lst files.
-      Make the screen drivers dyamically loadable.
+      Make the screen drivers dynamically loadable.
       Add skeleton braille,speech,screen driver source.
    Screen driver changes:
       Define screen driver parameters in a more standard way.
@@ -2629,7 +2629,7 @@ September 17, 2005:
       Remove the leading ./ from config.h in make file dependency lists.
       Some compilers don't like trailing slashes on directory paths.
       Use the shell variable $RANDOM as a last resort when generating the API key.
-   rhmkiso chagnes:
+   rhmkiso changes:
       Build in the Linux screen driver, and don't build any other screen drivers.
       Add support for making a braillified Fedora Core 4 installer image.
    RPM changes:
@@ -3008,7 +3008,7 @@ June 8, 2004:
    Fix a pointer error. (st).
    Most of the previous/next setting code is common. (dm)
    Fix the comments for and adjust the names of the fields of the MenuItem structure. (dm)
-   Change the routing keys in the preferences menu from a set of descrete values to a scroll bar. (dm,np)
+   Change the routing keys in the preferences menu from a set of discrete values to a scroll bar. (dm,np)
    Fix a buffer overflow problem in updatePreferences(). (np,dm)
    Building the BrlAPI reference manual fails when not building in the source tree. (ml)
    Add the firmness handler to the Alva driver for the Satellite displays. (dm)
@@ -3091,7 +3091,7 @@ April 13, 2004:
       Allow processing to continue when an error is encountered.
    Improve the Papenmeier help descriptions. (dm)
    Tidy up the Papenmeier configuration file parser declarations. (dm)
-   Fix descrepancies in the Papenmeier status key toggle commands. (dm)
+   Fix discrepancies in the Papenmeier status key toggle commands. (dm)
    Remove the padding of help page widths to multiples of 40. (dm)
    Allow a help page to have more than 255 lines. (dm)
    Papenmeier driver changes: (dm)
@@ -3320,7 +3320,7 @@ March 8, 2004:
    Remove the spurious #define of PREFSTYLE for the null braille driver. (dm)
    brl_reset() should return a boolean. (dm)
    EuroBraille driver version 1.3.2: (yp)
-      Remade brl_ReadPacket and brl_WritePacket to allow writting of low-level packets and error code retrieving.
+      Remade brl_ReadPacket and brl_WritePacket to allow writing of low-level packets and error code retrieving.
       Full Iris support.
       Implement brl_reset.
    Move the autorepeat settings from command line options to the preferences menu. (dm)
@@ -3342,7 +3342,7 @@ March 8, 2004:
       Add -R (--autorepeat-delay=).
       Add -r (--autorepeat-interval=).
    Change the Alva driver to use the core's autorepeat support. (dm)
-   Add autorepeat suport to the core. (dm)
+   Add autorepeat support to the core. (dm)
    Alvas automatically send an identification packet when DTR is ascerted. (dm)
    Arbitrarily rewrite the Alva display whenever a configuration change occurs. (dm)
    Log unexpected Alva input packets. (dm)
@@ -3617,7 +3617,7 @@ October 30, 2002:
    Add text translation table for vni (Vietnamese). Thu Trang <phamtrang2002@softhome.net>
    Implement attribute viewing and attribute underlining for contracted braille. (dm)
    Load drivers from background process. (dm)
-      (ViaVoice wouldn't run when loaded in foreground but started in backgroun)
+      (ViaVoice wouldn't run when loaded in foreground but started in background)
    Support 512-character fonts. (dm) + Tapio Kelloniemi
    Fix colour array for CR_DESCCHAR. Tapio Kelloniemi
    Experimental gpm (mouse) support. (dm)
@@ -3835,13 +3835,13 @@ July 13, 2002:
    Remove TBL_CMD and TBL_ARG. (dm)
    Log command line syntax errors to syslog. (dm)
    Make message delay by default; add MSG_NODELAY flag. (sd)
-   Fix problems with the skipping of blank windows and ends of liens. (sd)
+   Fix problems with the skipping of blank windows and ends of lines. (sd)
    Change directory to right place if PREFIX is set. (dm)
    Disable speech tracking when CMD_SAY is used. (np)
    Merge LogAndStderr into LohPrint. (dm)
    Cleanly wrap long help (-h) output lines. (dm)
    Increase default message delay from 2 to 4 seconds. (dm)
-   Message delay is now interruptable by pressing key on braille display. (dm)
+   Message delay is now interruptible by pressing key on braille display. (dm)
    Startup and exiting messages now fit within 18 characters. (dm,sd)
    Add message to alert user to presence of startup errors. (dm)
    Warn if a configuration file directive is specified more than once. (dm)
@@ -4137,7 +4137,7 @@ June 1999:
      by using the new filter comptable to generate text.auto.h and
      attrib.auto.h.  A text translation table is now only loaded if the
      -t option is specified.
-  -  -q|--quiet now surpresses the start-up message on the Braille display.
+  -  -q|--quiet now suppresses the start-up message on the Braille display.
 
   (Documentation still to be updated ...)
      
